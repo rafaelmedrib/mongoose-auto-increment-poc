@@ -1,0 +1,11 @@
+version: 'version 1.0.0'
+
+services:
+  database:
+    image: mongo:4.0
+    container_name: mongo_database
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./data:/data/db
+    
